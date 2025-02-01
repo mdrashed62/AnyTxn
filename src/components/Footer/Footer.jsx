@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="w-3/4 h-[120px]  bg-white absolute top-0  right-0 transform z-10 skew-y-8 origin-bottom-left"></div>
 
       {/* Angled Top Section */}
-      <div className="relative bg-blue-600 text-white h-[550px] px-8 overflow-hidden">
+      <div className="relative bg-[#0663CD] text-white h-[550px] px-8 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-500 opacity-80"></div>
           <img
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Section */}
-      <div className="bg-blue-900 text-white py-6 px-8">
+      <div className="bg-[#002045] text-white py-16 px-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-xl font-bold">AYTECH</div>
           <div className="flex space-x-6 text-blue-300">
@@ -80,7 +80,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="bg-blue-950">
+      <div className="bg-[#00152D]">
         <div className=" text-blue-300 text-sm text-center py-4 max-w-6xl mx-auto flex items-center justify-between">
           <div>&copy; 2023 All rights reserved. Any Technology Pte Ltd.</div>
           <div>

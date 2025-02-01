@@ -1,3 +1,4 @@
+import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 import navLogo from "../../assets/navLogo.svg";
 
 const Navbar = () => {
@@ -57,8 +58,8 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex gap-4 items-center">
             <li className="dropdown bg-none dropdown-hover">
-              <p tabIndex={0} role="button" className="btn">
-                Solutions
+              <p tabIndex={0} role="button" className="">
+                Solutions <FaAngleDown />
               </p>
               <ul className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 pt-2 shadow-sm flex flex-col gap-1">
                 <li>
@@ -81,8 +82,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="border border-white hover:bg-white hover:text-blue-500 rounded-sm py-3 px-8 font-bold">
-            Contact Us
+          <button className="border flex justify-center items-center gap-3 border-white hover:bg-white hover:text-blue-500 rounded-sm py-3 px-8 font-bold">
+            Contact Us <FaAngleRight />
           </button>
         </div>
       </div>
