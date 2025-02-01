@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import img1 from "../../assets/b.jpg";
-import img2 from "../../assets/eventBG.jpeg";
-// import img3 from "../../assets/fixedImg.jpg";
+import img1 from "../../assets/futureImg1.jpg";
+import img2 from "../../assets/futureImg2.jpg";
+import img3 from "../../assets/futureImg3.png";
+import img4 from "../../assets/futureImg4.jpg";
 
 
 const tabs = [
@@ -14,16 +15,16 @@ const tabs = [
 
 const content = {
   "Customer focused": {
-    title: "AGILE AND ADAPTABLE",
-    subtitle: "Agile and adaptable for growth",
+    title: "CUSTOMER FOCUSED",
+    subtitle: "Purpose-built financial services",
     description1:
-      "Innovate with evolving customer demands through our open platform-based technology architecture. Stay ahead of the ever-changing financial landscape with a strong focus on security, compliance and performance.",
+      "Elevate customer experience and achieve agile financial product innovation with the world's first, consumer-centric, real-time transaction account processing and credit limit system.",
     description2:
-      "Optimise your offerings to unlock new revenue streams and deliver an extraordinary customer experience, with digitally designed core banking, payment processing and lending capabilities.",
+      "Experience the advantages of integrated retail financial services technology, real-time analysis of transactional behaviour and product marketing opportunities.",
     image: img1,
   },
   "Agile and adaptable": {
-    title: "AGILE AND",
+    title: "AGILE AND ADAPTABLE",
     subtitle: "Agile and adaptable for growth",
     description1:
       "Innovate with evolving customer demands through our open platform-based technology architecture. Stay ahead of the ever-changing financial landscape with a strong focus on security, compliance and performance.",
@@ -32,22 +33,21 @@ const content = {
     image: img2,
   },
   "Compliance ready": {
-    title: "AND ADAPTABLE",
-    subtitle: "Agile and adaptable for growth",
+    title: "COMPLIANCE READY",
+    subtitle: "Manage compliance with ease",
     description1:
-      "Innovate with evolving customer demands through our open platform-based technology architecture. Stay ahead of the ever-changing financial landscape with a strong focus on security, compliance and performance.",
+      "Navigate through the evolving regulatory landscape with confidence by streamlining compliance management-through real-time risk monitoring solutions powered by Al and machine learning.",
     description2:
-      "Optimise your offerings to unlock new revenue streams and deliver an extraordinary customer experience, with digitally designed core banking, payment processing and lending capabilities.",
-    image: img1,
+      "Transform your compliance strategy with flexible and diversified policy rules, powered by cutting-edge technology that is designed for seamless integration with core banking and card payment systems.",
+    image: img3,
   },
   "Secure and safe": {
-    title: "ADAPTABLE",
-    subtitle: "Agile and adaptable for growth",
+    title: "SECURE AND SAFE",
+    subtitle: "Highly secure and safe",
     description1:
-      "Innovate with evolving customer demands through our open platform-based technology architecture. Stay ahead of the ever-changing financial landscape with a strong focus on security, compliance and performance.",
-    description2:
-      "Optimise your offerings to unlock new revenue streams and deliver an extraordinary customer experience, with digitally designed core banking, payment processing and lending capabilities.",
-    image: img2,
+      "Discover unparalleled security trusted by financial institutions across the globe. Our applications are meticulously developed in compliance with international security standards, drawing on 20 years of technical expertise.",
+    description2: "Join over 40 esteemed Fls, each serving more than 200 million customers, and benefit from our secure, robust and reliable infrastructure.",
+    image: img4,
   },
 };
 
@@ -87,25 +87,24 @@ const Future = () => {
           ))}
         </div>
 
-        {/* Content + Image with Animation */}
         <div className="relative mt-6 p-6 bg-white rounded-lg flex items-center gap-6 overflow-hidden">
           <AnimatePresence mode="wait">
-            {/* Text Section */}
             <motion.div
               key={activeTab}
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="text-left w-2/3"
+              className="text-left w-1/2 h-[400px]"
             >
-              <h2 className="text-xl font-semibold text-blue-800">{content[activeTab].title}</h2>
-              <h3 className="text-lg font-bold text-black mt-2">{content[activeTab].subtitle}</h3>
-              <p className="text-gray-700 mt-2">{content[activeTab].description1}</p>
-              <p className="text-gray-700 mt-2">{content[activeTab].description2}</p>
+             <div className="space-y-5">
+             <h2 className="text-xl text-[#1F80F0] font-bold">{content[activeTab].title}</h2>
+              <h3 style={{lineHeight: '4rem'}}  className="text-6xl  font-bold text-[#071F3B] mt-2">{content[activeTab].subtitle}</h3>
+              <p style={{lineHeight: '30px'}} className="text-[#154071] font-bold mt-2">{content[activeTab].description1}</p>
+              <p style={{lineHeight: '28px'}}  className="text-gray-700 mt-2">{content[activeTab].description2}</p>
+             </div>
             </motion.div>
 
-            {/* Image Section */}
             <motion.img
               key={`img-${activeTab}`}
               src={content[activeTab].image}
@@ -114,7 +113,7 @@ const Future = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="w-1/2 rounded-lg"
+              className="w-1/2 rounded-lg h-[400px]"
             />
           </AnimatePresence>
         </div>

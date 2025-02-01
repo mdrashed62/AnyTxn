@@ -4,6 +4,7 @@ import footerImg2 from "../../assets/WaveLinesDesktop2.svg";
 import footerImg3 from "../../assets/WaveLinesMobile2.svg";
 import footerImg4 from "../../assets/2.svg"
 import footerImg5 from "../../assets/3.svg"
+import footerLogo from "../../assets/navLogo.svg";
 
 export default function Footer() {
   return (
@@ -61,8 +62,8 @@ export default function Footer() {
       {/* Footer Section */}
       <div className="bg-[#002045] text-white py-16 px-8">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="text-xl font-bold">AYTECH</div>
-          <div className="flex space-x-6 text-blue-300">
+          <div className=""><img src={footerLogo} alt="" /></div>
+          <div className="flex space-x-6 text-[#00E9EA] font-semibold text-xl">
             <a href="#" className="hover:text-white">
               Our Solutions
             </a>
@@ -81,10 +82,10 @@ export default function Footer() {
 
       {/* Bottom Copyright */}
       <div className="bg-[#00152D]">
-        <div className=" text-blue-300 text-sm text-center py-4 max-w-6xl mx-auto flex items-center justify-between">
+        <div className=" text-[#1F80F0] font-bold text-sm text-center py-8 max-w-6xl mx-auto flex items-center justify-between">
           <div>&copy; 2023 All rights reserved. Any Technology Pte Ltd.</div>
           <div>
-            <a href="#" className="underline hover:text-white">
+            <a href="#" className=" hover:text-white">
               Privacy Policy
             </a>
           </div>

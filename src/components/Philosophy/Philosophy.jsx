@@ -2,6 +2,9 @@ import line4 from "../../assets/Line4.svg";
 import line1 from "../../assets/Line1.svg";
 // import line2 from "../../assets/Line2.svg";
 // import line3 from '../../assets/Line3.svg'
+import sm1 from '../../assets/smLogo1.png'
+import sm2 from '../../assets/smLogo2.svg'
+import sm3 from '../../assets/smLogo3.svg'
 
 const Philosophy = () => {
   return (
@@ -37,7 +40,7 @@ const Philosophy = () => {
             {/* Center: Blockchain with Arrows */}
             <div className="relative flex flex-col items-center">
               <div className="w-[200px] text-center">
-                <div className="bg-white shadow-xl shadow-[0_4px_6px_-1px_#D0EAF9] rounded-xl py-6">
+                <div className="bg-white shadow-xl rounded-xl py-6">
                   <h5 className="text-orange-500 font-bold text-[12px]">
                     MECHANISM
                   </h5>
@@ -98,12 +101,12 @@ const Philosophy = () => {
           {/* Full-suite solutions */}
           <div className="bg-[#F8FCFF] shadow-lg rounded-xl p-6 flex flex-col items-start text-start">
             <div>
-              <span className="text-blue-500 text-3xl">🔗</span>
+              <img src={sm3} alt="" />
             </div>
             <h3 className="text-2xl font-bold mt-4 text-[#0B305B]">
               Full-suite solutions
             </h3>
-            <p className="text-gray-500 mt-2 text-[#0B305B]">
+            <p className="mt-2 text-[#0B305B]">
               Experience the ease of integration across various banking and
               payment functions with our comprehensive suite of solutions.
             </p>
@@ -111,11 +114,11 @@ const Philosophy = () => {
 
           {/* Simplify the complex */}
           <div className="bg-[#F8FCFF] shadow-lg rounded-xl p-6 flex flex-col items-start text-start">
-            <span className="text-green-500 text-3xl">💡</span>
+            <img src={sm1} alt="" />
             <h3 className="text-2xl font-bold mt-4 text-[#0B305B]">
               Simplify the complex
             </h3>
-            <p className="text-gray-500 mt-2 text-[#0B305B]">
+            <p className=" mt-2 text-[#0B305B]">
               Simplify complex processes and optimize your financial operations
               by leveraging AI, Blockchain, Cloud Computing, and Big Data.
             </p>
@@ -123,11 +126,11 @@ const Philosophy = () => {
 
           {/* Cutting-edge tech */}
           <div className="bg-[#F8FCFF] shadow-lg rounded-xl p-6 flex flex-col items-start text-start">
-            <span className="text-orange-500 text-3xl">⚙️</span>
+            <img src={sm2} alt="" />
             <h3 className="text-2xl font-bold mt-4 text-[#0B305B]">
               Cutting-edge tech
             </h3>
-            <p className="text-gray-500 mt-2 text-[#0B305B]">
+            <p className="mt-2 text-[#0B305B]">
               We seamlessly combine cutting-edge technologies, resulting in an
               unparalleled fintech experience for financial institutions.
             </p>
