@@ -88,7 +88,7 @@ const Future = () => {
         </div>
 
         {/* Content + Image with Animation */}
-        <div className="relative mt-6 p-6 bg-white shadow-lg rounded-lg flex items-center gap-6 overflow-hidden">
+        <div className="relative mt-6 p-6 bg-white rounded-lg flex items-center gap-6 overflow-hidden">
           <AnimatePresence mode="wait">
             {/* Text Section */}
             <motion.div
