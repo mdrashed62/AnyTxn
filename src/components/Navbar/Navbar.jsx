@@ -3,8 +3,8 @@ import navLogo from "../../assets/navLogo.svg";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100">
-      <div className="navbar shadow-sm max-w-6xl mx-auto pr-8">
+    <div className=" absolute top-3 left-0 w-full z-10">
+      <div className="navbar shadow-lg pr-8">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
