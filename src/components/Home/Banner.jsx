@@ -3,6 +3,8 @@ import bannerImg from "../../assets/bannerImg.jpg";
 import photo3 from "../../assets/WaveLinesDesktop2.svg";
 import photo4 from "../../assets/WaveLinesDesktop3.svg";
 import photo5 from "../../assets/WaveLinesMobile2.svg";
+import '../Home/style.css'
+
 
 const Banner = () => {
   return (
