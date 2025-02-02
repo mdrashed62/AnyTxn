@@ -54,8 +54,11 @@ export default function Footer() {
             Talk to us to find out how we can transform your organisation for
             the future
           </p>
-          <button className="mt-4 sm:mt-6 px-6 sm:px-10 py-2 sm:py-3 lg:py-4 lg:w-2/5 md:w-2/5 w-2/3 bg-[#FE8B53] text-white font-bold text-lg flex justify-center items-center gap-2 rounded-md shadow-xl">
-            Contact Us <FaArrowRight />
+          <button className="mt-4 sm:mt-6 px-6 sm:px-10 py-2 sm:py-3 lg:py-4 lg:w-2/5 md:w-2/5 w-2/3 bg-[#FE8B53] text-white font-bold text-lg flex justify-center items-center gap-2 rounded-md shadow-xl group">
+            <span className="group-hover:-translate-x-1 transition-transform duration-300 ease-in-out">
+              Contact Us
+            </span>
+            <FaArrowRight className="group-hover:translate-x-1 pt-1 transition-transform duration-300 ease-in-out" />
           </button>
         </div>
       </div>
