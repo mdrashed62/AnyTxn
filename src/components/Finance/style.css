@@ -1,0 +1,15 @@
+
+@keyframes bounceInPlace {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+  
+  /* Applying the bounce animation to logos */
+  .bounceInPlace {
+    animation: bounceInPlace 3s ease-in-out infinite; /* Continuous bounce */
+  }
+  

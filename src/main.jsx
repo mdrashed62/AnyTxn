@@ -8,8 +8,10 @@ import { router } from './Routes/Routes.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div>
+    <div className='bg-white'>
+    <div className='container mx-auto'>
     <RouterProvider router={router} />
+    </div>
     </div>
   </StrictMode>
 )

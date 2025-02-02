@@ -67,12 +67,10 @@ const Future = () => {
   }, []);
 
   return (
-    <div className="bg-white px-4 sm:px-6 lg:px-8">
+    <div className="bg-white px-4 lg:px-4">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-4 py-6">
         <h1 className="text-[#1F80F0] font-bold text-xs sm:text-sm">TECHNOLOGY BUILT FOR YOU</h1>
         <h1 className="text-3xl sm:text-4xl font-bold text-black">The future of finance</h1>
-
-        {/* Tabs */}
         <div className="hidden md:flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
           {tabs.map((tab) => (
             <button
@@ -88,8 +86,6 @@ const Future = () => {
             </button>
           ))}
         </div>
-
-        {/* Content Section */}
         <div className="relative mt-6 p-4 sm:p-6 bg-white rounded-lg flex flex-col md:flex-row items-center gap-6 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
