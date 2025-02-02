@@ -2,9 +2,9 @@ import line4 from "../../assets/Line4.svg";
 import line1 from "../../assets/Line1.svg";
 // import line2 from "../../assets/Line2.svg";
 // import line3 from '../../assets/Line3.svg'
-import sm1 from '../../assets/smLogo1.png'
-import sm2 from '../../assets/smLogo2.svg'
-import sm3 from '../../assets/smLogo3.svg'
+import sm1 from "../../assets/smLogo1.png";
+import sm2 from "../../assets/smLogo2.svg";
+import sm3 from "../../assets/smLogo3.svg";
 
 const Philosophy = () => {
   return (

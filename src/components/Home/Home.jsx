@@ -7,11 +7,11 @@ import Sponsored from "../Sponsored/Sponsored";
 const Home = () => {
   return (
     <div>
-      <Finance />
+      {/* <Finance />*/}
       <Philosophy />
       <Future />
       <CounterSection />
-      <Sponsored />
+      <Sponsored /> 
     </div>
   );
 };

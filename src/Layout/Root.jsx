@@ -7,8 +7,8 @@ import Banner from "../components/Home/Banner";
 const Root = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Banner />
+            {/* <Navbar></Navbar>
+            <Banner /> */}
             <Outlet></Outlet>
             <Footer />
         </div>
